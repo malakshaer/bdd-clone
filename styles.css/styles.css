@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+img{
+    height: 100%;
+}
+
+/*Nav Bar*/
+
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 100px;
+    
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+.links > li{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.cover-container{
+    background: url(/Images/cover-photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+.cover-content{
+    padding: 40vh 0 8vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cover-heading{
+    font-family: Franklin Gothic Medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    
+}
+
+.btn-join{
+    background-color: rgb(115, 115, 235);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.link-nav-bar{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 3px;
+}
+
+.link-nav-bar:hover{
+    background-color: hsla(110, 67%, 94%, 0.2);
+    
+}
+
+/*Solid Foundations container*/
+
+.solid-foundations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+}
+
+.five-sf{
+    text-align: center;
+    padding: 50px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.sf-paragraph{
+    font-family:sans-serif;
+    color: rgb(106, 108, 110);
+    font-weight: bold;
+    margin: 10px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    
+}
+
+.sf-img{
+    width: 50px;
+    height: 40px;
+}
+
+/*Video Container*/
+
+/*Join BDD Container*/
+
+.join-bdd-heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.17em;
+}
+
+.join-bdd-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.join-bdd-cards{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 6%);
+}
+
+.btn-more{
+    background-color: rgb(115, 115, 235);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+/*Parallax Light Container*/
+.parallax-light-container{
+    background-image: url(/Images/parallax-light.jpg);
+}
+
+/*Footer Container*/
+
+footer{
+    background-color: black;
+    color: #fff;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.btn-subscribe{
+    background-color: rgb(115, 115, 235);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.form-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+form{
+    background-color: white;
+    color: white;
+}
+
+.footer-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-media-accounts{
+    display: flex;
+    flex-direction: row;
+}
+
+.webneoo-site{
+    text-decoration: none;
+    color: blue;
+}
+
+.copy-right{
+    color: #292b2c;
+}
+/* Media Query */
+
+@media only screen and (max-width: 800px) {
+    .mobile {
+      flex-direction: column;
+    }
+  
+    .media-images > img {
+      width: 100%;
+    }
+  
+    .program-images > div {
+      width: 100%;
+    }
+
+  }
