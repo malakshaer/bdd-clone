@@ -129,6 +129,10 @@ img{
 
 /*Video Container*/
 
+.explore-vision{
+    background-image: url(/Images/bdd-office.jpg);
+    
+}
 /*Join BDD Container*/
 
 .join-bdd-heading{
@@ -169,6 +173,90 @@ img{
 /*Parallax Light Container*/
 .parallax-light-container{
     background-image: url(/Images/parallax-light.jpg);
+
+}
+
+.preferred-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.preferred-hub{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.preferred-paragraph{
+    font-weight: bold;
+    font-size: 80px;
+    padding: 0 50px 0 50px;
+    margin: 30px;
+}
+
+/*TRending Container*/
+
+.trending{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.trending-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trending-cards{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.trending-paragraph{
+    padding-bottom: 30px;
+}
+.trending-second-heading{
+    padding-bottom: 40px;
+    padding-top: 10px;
+    font-family: Franklin Gothic Medium;
+}
+
+.visit-blog{
+    background-color: rgb(115, 115, 235);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 180px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.trending-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn-trending-design{
+    text-decoration: none;
+    color: white;
 }
 
 /*Footer Container*/
