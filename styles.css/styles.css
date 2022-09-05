@@ -142,10 +142,24 @@ img{
 }
 
 /*Video Container*/
+.video-image{
+    display: flex;
+    justify-content: center;
+    
+}
+.img-photo{
+    margin: 300px;
+}
 
 .explore-vision{
     background-image: url(/Images/bdd-office.jpg);
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 /*Join BDD Container*/
 
@@ -209,6 +223,16 @@ li{
     text-align: center;
     display: inline-block;
     cursor: pointer;
+}
+.join-bdd-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.join-bdd-store{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 /*Parallax Light Container*/
 .parallax-light-container{
@@ -389,7 +413,7 @@ li{
 footer{
     background: #212121;
     color: #646464;
-    padding: 48px 0px 0px;
+    padding: 48px 0px 20px;
     font: 16px;
 }
 .footer-words{
@@ -397,28 +421,26 @@ footer{
     font: 13.9px;
 }
 
-.footer-sections{
-    display: block;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
 .footer1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    min-height: 1px;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+.footer-sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 10px;
 }
 
-.flex-left{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+form{
+    background-color: white;
+    width: 250px;
 }
 
 .btn-subscribe{
@@ -437,12 +459,24 @@ footer{
 .form-sub{
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
+    gap: 20px;
+    padding: 10px;
+    padding-top: 50px;
+    
 }
 
 form{
-    background-color: white;
-    color: white;
+    color: #464a4c;
+    background-color: transparent;
+}
+.form-control{
+    background-color: transparent;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    font-size: 1rem;
+    padding-top: 25px;
 }
 
 .footer-footer{
@@ -450,11 +484,36 @@ form{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .social-media-accounts{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-store{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.store-img{
+    width: 180px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.footer-connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .webneoo-site{
@@ -463,7 +522,7 @@ form{
 }
 
 .copy-right{
-    color: #292b2c;
+    color: #0f0f0f;
 }
 /* Media Query */
 
