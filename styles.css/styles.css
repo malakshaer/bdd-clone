@@ -12,11 +12,17 @@ img{
 
 .top-nav{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     height: 100px;
     padding-top: 30px;
     padding-left: 100px;
     
+}
+
+.nav-logo-img{
+    width: 80px;
+    height: auto;
 }
 
 .links{
@@ -26,13 +32,13 @@ img{
     align-items: center;
     font-size: 50px;
     font-weight: bold;
-    padding-right: 40px;
 }
 
 .links > li{
     margin-right: 20px;
     cursor: pointer;
 }
+
 .cover-container{
     background: url(/Images/cover-photo2.jpg);
     background-color: rgba(0, 0, 0, 0.2);
@@ -44,6 +50,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 .cover-content{
     padding: 40vh 0 8vh 0;
@@ -64,8 +72,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     padding: 60px;
+    
     
 }
 
@@ -108,6 +116,7 @@ img{
     margin-left: 15px;
     margin-left: 15px;
     box-sizing: inherit;
+    padding-bottom: 30px;
 }
 
 .five-sf{
@@ -124,16 +133,25 @@ img{
     font-weight: bold;
     margin: 10px;
 }
+
 .cards{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 5px;
     align-items: center;
     width: 200px;
     padding: 30px;
     border-radius: 5px;
     background-color: #fff;
-    
+    text-align: center;
+}
+
+.cards:hover{
+    background-color: #d9e2e7;
+}
+
+.cards:last-child:hover{
+    background-color: rgb(233, 195, 195);
 }
 
 .sf-img{
@@ -147,8 +165,13 @@ img{
     justify-content: center;
     
 }
+
 .img-photo{
-    margin: 300px;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .explore-vision{
@@ -159,8 +182,9 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
 }
+
 /*Join BDD Container*/
 
 .join-bdd-heading{
@@ -224,15 +248,32 @@ li{
     display: inline-block;
     cursor: pointer;
 }
+
 .join-bdd-footer{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    padding-bottom: 40px;
+    font-size: 400;
+    font-weight: 200;
+    text-decoration-color: #5e5b5b;
 }
+
 .join-bdd-store{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+.bdd-store-img{
+    width: 50%;
+    height: auto;
+}
+
+.download-store{
+    display: flex;
+    flex-direction: row;
 }
 /*Parallax Light Container*/
 .parallax-light-container{
@@ -250,38 +291,49 @@ li{
     font-weight: bold;
     color: #212121;
 }
+
 .preferred-hub{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 120px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 40px;
+    padding-bottom: 100px;
     font: 16px;
     color: #646464;
 }
+
+.preferred-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
 .preferred-paragraph{
     text-align: center;
     color: #333333;
-    font-size: 80px;
-    font-size: .95rem;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: bold;
     letter-spacing: 2px;
     box-sizing: inherit;
 }
 
-/*TRending Container*/
+/*Trending Container*/
 .trending-container{
     background-color: #f5f5f5;
 }
+
 .trending{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .trending-heading{
     display: flex;
     justify-content: center;
@@ -349,8 +401,9 @@ li{
 .program-flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
 .program-cards{
@@ -359,11 +412,17 @@ li{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 1rem!important;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 1rem!important;
+    color: white;
 }
 
+.img-program{
+    width: 100px;
+    height: 100px;
+    padding-bottom: 20px;
+}
 
 .click-program{
     display: flex;
@@ -372,6 +431,7 @@ li{
     padding: 20px;
     
 }
+
 .program-btn{
     background-color: #0078be;
     color: #fff;
@@ -396,16 +456,24 @@ li{
 .words-cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 40px;
 
 }
 .card-word{
     position: relative;
-    width: 100%;
-    padding: 1.8rem;
+    padding: 1.5rem;
     border-radius: 0.35rem;
-    display: block;
+    width: 400px;
+    height: 200px;
+    border: #646464 solid .01rem;
+}
 
+.img-card{
+    width: 90px;
+    height: 70px;
 }
 
 /*Footer Container*/
@@ -416,6 +484,7 @@ footer{
     padding: 48px 0px 20px;
     font: 16px;
 }
+
 .footer-words{
     color: #f9f9f9;
     font: 13.9px;
@@ -430,6 +499,7 @@ footer{
     padding-right: 150px;
     padding-left: 150px;
 }
+
 .footer-sections{
     display: flex;
     flex-direction: column;
@@ -462,13 +532,13 @@ form{
     gap: 20px;
     padding: 10px;
     padding-top: 50px;
-    
 }
 
 form{
     color: #464a4c;
     background-color: transparent;
-}
+} 
+
 .form-control{
     background-color: transparent;
     font-weight: 400;
@@ -493,7 +563,9 @@ form{
 .social-media-accounts{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
 }
 
 .flex-store{
@@ -514,6 +586,15 @@ form{
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    padding-top: 20px;
+}
+.connect-us-footer{
+    padding-top: 10px;
+} 
+
+.white-a{
+    color: white;
+    text-decoration: none;
 }
 
 .webneoo-site{
@@ -522,8 +603,9 @@ form{
 }
 
 .copy-right{
-    color: #0f0f0f;
+    color: #000000;
 }
+
 /* Media Query */
 
 @media only screen and (max-width: 800px) {
@@ -539,4 +621,19 @@ form{
       width: 100%;
     }
 
+    .top-nav{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .collapse-navbar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .collapse-navbar li{
+        margin: 5px ;
+    }
   }
